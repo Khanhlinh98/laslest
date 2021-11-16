@@ -1,0 +1,132 @@
+.plan {
+  background-color: #fbfbfb;
+  padding-top: 80px;
+  
+  &__header {
+    max-width: 555px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__heading {
+    font-size: 35px;
+    color: $heading-color;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  &__desc {
+    line-height: calc(30 / 16);
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 50px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+
+    &-list {
+      margin-bottom: 50px;
+    }
+
+    &-img {
+      padding: 79px 92px 30px;
+    }
+    &-heading {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      padding-bottom: 10px;
+      font-size: 14px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__price {
+    margin-top: auto;
+    padding-bottom: 50px;
+    &-title {
+      text-align: center;
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  &__item.is--active,
+  &__item:hover {
+    border-color: $primary-color;
+    .btn {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {}
+@media (max-width:1023px) {}
+@media (min-width:740px) and (max-width:1023px) 
+{
+  .plan__list {
+    
+  display: grid;
+  justify-content: flex-start;
+  grid-auto-columns: 300px;
+  grid-auto-flow: column;
+  grid-gap: 1.5rem;
+  overflow: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 1rem;
+  grid-template-columns: unset;
+  }
+  .yourclass::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .yourclass > *{
+    scroll-snap-align: start;
+  }
+}
+@media (max-width: 739px) {
+  .plan__list {
+    
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 345px;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+    }
+    .yourclass::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    .yourclass > *{
+      scroll-snap-align: start;
+    }
+}

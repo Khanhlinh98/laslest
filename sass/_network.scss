@@ -1,0 +1,28 @@
+.network {
+    margin-top: 150px;
+    &__header {
+        max-width: 555px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      &__heading {
+        font-size: 35px;
+        color: $heading-color;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      &__desc {
+        line-height: calc(30 / 16);
+        margin-bottom: 60px;
+      }
+      &__social {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 50px;
+      }
+      &__item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+}

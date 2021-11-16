@@ -1,0 +1,46 @@
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0 40px;
+    color: $text-color;
+    &-link {
+      color: inherit;
+    }
+  }
+  @media screen and (max-width:739px) {
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #9e9d9d;
+    z-index: 99;
+    flex-direction: column;
+    gap: 40px 0;
+    padding-top: 60px;
+    padding-left: 20px;
+    align-items: stretch;
+    border-left: 1px solid;
+    color: #fff;
+    transform: translateX(100%);
+    will-change: transform;
+    transition: all 0.2s linear;
+    &.is-show {
+    transform: translateX(0);
+    }
+    
+}
+.header__auth {
+    display: none;
+}
+.menu-toggle {
+    display:  block;
+}
+}
+@media (min-width:740px) and (max-width:1023px) {
+    .menu {
+        display: none;
+    }
+}

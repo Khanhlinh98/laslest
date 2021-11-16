@@ -1,0 +1,56 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 85px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__auth {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+    }
+    &__signin {
+        font-weight: 500;
+        color: $heading-color;
+    }
+    &__signup {
+        font-weight: 500;
+        color: $primary-color;
+        padding: 13px 45px;
+        border-radius: 100rem;
+        border: 1px solid;
+       
+    }
+    
+   
+}
+.menu-toggle {
+    display: none;
+}
+
+
+
+
+// @media screen and (max-width: 1279px) {}
+// @media (max-width:1023px) {}
+// @media (min-width:740px) and (max-width:1023px) {}
+// @media (max-width: 739px) {}
+
+@media screen and (max-width: 1279px) {
+
+}
+
+@media (max-width:1023px) {
+
+}
+@media (min-width:740px) and (max-width:1023px) {
+
+}
+@media (max-width: 739px) {
+.btn {
+    padding: 6px 20px;
+}
+
+}
